@@ -1,7 +1,7 @@
 {
   "usingComponents": {
     "t-grid": "tdesign-qq-miniprogram/grid/grid",
-    "t-grid-item": "tdesign-qq-miniprogram/grid-item/grid-item",
+    "t-grid-item": "tdesign-qq-miniprogram/grid/grid-item",
     "table-view": "../../miniprogram_npm/miniprogram-table-component"
   }
 }
