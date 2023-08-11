@@ -1,0 +1,7 @@
+.detail {
+    width: 100%;
+    overflow: auto;
+}
+.detail .t-grid-item__content {
+    padding: 0rpx;
+}
