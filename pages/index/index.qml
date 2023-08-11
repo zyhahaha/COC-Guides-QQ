@@ -55,6 +55,24 @@
                         style="width: 80rpx; height: 80rpx;"
                     />
                 </t-grid-item>
+                <t-grid-item key="aaa">
+                    <view style="width: 80rpx; height: 80rpx;"></view>
+                </t-grid-item>
+                <t-grid-item key="bbb">
+                    <view style="width: 80rpx; height: 80rpx;"></view>
+                </t-grid-item>
+                <t-grid-item key="ccc">
+                    <view style="width: 80rpx; height: 80rpx;"></view>
+                </t-grid-item>
+                <t-grid-item key="ddd">
+                    <view style="width: 80rpx; height: 80rpx;"></view>
+                </t-grid-item>
+                <t-grid-item key="eee">
+                    <view style="width: 80rpx; height: 80rpx;"></view>
+                </t-grid-item>
+                <t-grid-item key="fff">
+                    <view style="width: 80rpx; height: 80rpx;"></view>
+                </t-grid-item>
             </t-grid>
         </t-tab-panel>
     </t-tabs>
