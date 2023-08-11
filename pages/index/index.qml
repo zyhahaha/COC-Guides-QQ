@@ -4,15 +4,26 @@
     <view class="search-wrap">
         <!-- <t-icon name="menu-fold" size="48rpx" style="margin-top: 10rpx;" bind:click="onOpenDrawer" /> -->
         <!-- <t-icon name="setting" size="48rpx" style="margin-top: 10rpx;" bind:click="onChangeLevel" /> -->
-        <view bindtap="onChangeLevel" style="width: 86rpx; height: 70rpx; line-height: 66rpx; text-align: right;">
+        <view bindtap="onChangeLevel" style="width: 86rpx; height: 70rpx; line-height: 66rpx; font-size: 32rpx; text-align: right;">
             {{ level }}本
         </view>
-        <t-icon name="caret-down-small" size="48rpx" style="margin-top: 10rpx;" bind:click="onChangeLevel" />
+        <t-icon name="caret-down-small" size="42rpx" style="margin-top: 10rpx;" bind:click="onChangeLevel" />
         <!-- <view style="width: 200rpx;">
             <t-dropdown-menu>
                 <t-dropdown-item options="{{ levelOptions }}" default-value="{{ 2 }}" keys="{{ keysOptions }}" bindchange="onChangeLevel" />
             </t-dropdown-menu>
         </view> -->
+        <t-picker
+            visible="{{pickerVisible}}"
+            title="请选择"
+            bindconfirm="onHandleActionSelected"
+            bindcancel="onPicker1Cancel"
+            bindchange="onPickerChange"
+            cancel-btn="取消"
+            confirm-btn="确定"
+        >
+            <t-picker-item options="{{levelOptions}}" value="{{level}}" />
+        </t-picker>
         <view class="search">
             <image class="search-icon" src="/assets/icon/search.png" mode="" />
             <input class="search-input" disabled placeholder="搜索兵种、法术、建筑、英雄等" bindtap="onGoSearch" />

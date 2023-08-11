@@ -2,8 +2,9 @@
   "navigationBarTitleText": "部落冲突数据查询",
   "usingComponents": {
     "t-icon": "tdesign-qq-miniprogram/icon/icon",
+    "t-picker": "tdesign-qq-miniprogram/picker/picker",
+    "t-picker-item": "tdesign-qq-miniprogram/picker/picker-item",
     "t-drawer": "tdesign-qq-miniprogram/drawer/drawer",
-    "t-action-sheet": "tdesign-qq-miniprogram/action-sheet/action-sheet",
     "t-tabs": "tdesign-qq-miniprogram/tabs/tabs",
     "t-tab-panel": "tdesign-qq-miniprogram/tabs/tab-panel",
     "t-grid": "tdesign-qq-miniprogram/grid/grid",

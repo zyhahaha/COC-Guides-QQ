@@ -9,7 +9,8 @@ Page({
 
     level: 15,
 
-    // levelOptions: levelOptions,
+    levelOptions: levelOptions,
+    pickerVisible: false,
     // keysOptions: {
     //   label: 'label',
     //   value: 'value'
@@ -49,7 +50,18 @@ Page({
       url,
     })
   },
+  onPicker1Cancel() { },
+  onPickerChange() {},
+  // onHandleActionSelected(e) {
+  //   console.log('picker1 confirm:', e.detail);
+  //   this.setData({
+  //     selectedCityValue: e.detail.value?.value,
+  //   });
+  // },
   onChangeLevel() {
+    this.setData({
+      pickerVisible: true
+    })
     // ActionSheet.show({
     //   theme: ActionSheetTheme.List,
     //   selector: '#t-action-sheet',
@@ -60,9 +72,13 @@ Page({
   },
   onHandleActionSelected(e) {
     this.setData({
-      level: e.detail.selected.value
+      level: e.detail.value[0].value
     })
-    qq.setStorageSync('level', e.detail.selected.value)
+    qq.setStorageSync('level', e.detail.value[0].value)
+
+    this.setData({
+      pickerVisible: false
+    })
   },
   onOpenDrawer() {
     this.setData({
