@@ -45,7 +45,7 @@ Page({
     // if (!this.data.orderType) return;
     if (typeof searchValue === 'string') url += `?searchValue=${searchValue}`
 
-    wx.navigateTo({
+    qq.navigateTo({
       url,
     })
   },
@@ -62,7 +62,7 @@ Page({
     this.setData({
       level: e.detail.selected.value
     })
-    wx.setStorageSync('level', e.detail.selected.value)
+    qq.setStorageSync('level', e.detail.selected.value)
   },
   onOpenDrawer() {
     this.setData({
@@ -78,14 +78,14 @@ Page({
     })
   },
   onScanCode() {
-    wx.scanCode().then(res => {
+    qq.scanCode().then(res => {
       this.onGoSearch(res.result)
     })
   },
   onDetail(e) {
     let content = e.currentTarget.dataset.content
-    wx.setStorageSync('unitDetail', content)
-    wx.navigateTo({
+    qq.setStorageSync('unitDetail', content)
+    qq.navigateTo({
       url: '/pages/detail/index'
     })
   },

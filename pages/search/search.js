@@ -22,7 +22,7 @@ Page({
         })
 
         if (searchValue) {
-            wx.hideKeyboard()
+            qq.hideKeyboard()
             this.handleSearch()
         }
     },
@@ -39,8 +39,8 @@ Page({
     },
     onDetail(e) {
         let content = e.currentTarget.dataset.content
-        wx.setStorageSync('unitDetail', content)
-        wx.navigateTo({
+        qq.setStorageSync('unitDetail', content)
+        qq.navigateTo({
             url: '/pages/detail/index'
         })
     },
@@ -52,7 +52,7 @@ Page({
     },
 
     async handleSearch() {
-        wx.showLoading({
+        qq.showLoading({
             title: '加载中',
         })
         
@@ -61,7 +61,7 @@ Page({
         })
         
         setTimeout(() => {
-            wx.hideLoading()
+            qq.hideLoading()
         }, 1000)
     },
 })

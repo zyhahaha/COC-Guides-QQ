@@ -19,9 +19,9 @@ Page({
     tableDataList: []
   },
   onLoad() {
-    const currentLevel = wx.getStorageSync('level') || 15
+    const currentLevel = qq.getStorageSync('level') || 15
     let levelUpperLimit = 0
-    const unitDetail = wx.getStorageSync('unitDetail')
+    const unitDetail = qq.getStorageSync('unitDetail')
     const tableDataList = []
     const updateList = unitDetail.detail.update
 
@@ -39,7 +39,7 @@ Page({
     })
 
     // 计算tableItem宽度
-    const windowWidth = wx.getSystemInfoSync().windowWidth
+    const windowWidth = qq.getSystemInfoSync().windowWidth
     const tableWidthSum = tableHeader.map(v => v.width).reduce((prev, next) => {
       return prev + next;
     })
@@ -89,10 +89,10 @@ Page({
       tableHeader,
       unitDetail,
       tableDataList,
-      tableHeight: wx.getSystemInfoSync().windowHeight - wx.getSystemInfoSync().statusBarHeight + 'px'
+      tableHeight: qq.getSystemInfoSync().windowHeight - qq.getSystemInfoSync().statusBarHeight + 'px'
     })
 
-    wx.setNavigationBarTitle({
+    qq.setNavigationBarTitle({
       title: unitDetail.name
     })
   }
