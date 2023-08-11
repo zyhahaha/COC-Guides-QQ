@@ -11,7 +11,7 @@
     </view>
     <view style="margin-bottom: 20rpx;">
         <t-grid column="{{3}}" theme="card">
-            <t-grid-item text="{{ item.key }}" description="{{ item.value }}" wx:for="{{unitDetail.detail.attribute}}" />
+            <t-grid-item text="{{ item.key }}" wx:key="index" description="{{ item.value }}" wx:for="{{unitDetail.detail.attribute}}" />
         </t-grid>
     </view>
     
