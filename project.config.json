@@ -1,5 +1,5 @@
 {
-	"projectid": "1108100302_aaa",
+	"projectid": "1112319538",
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
@@ -23,8 +23,8 @@
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"qqappid": "1108100302",
-	"projectname": "aaa",
+	"qqappid": "1112319538",
+	"projectname": "COCGuides",
 	"scripts": {
 		"beforeCompile": "",
 		"beforePreview": "",
