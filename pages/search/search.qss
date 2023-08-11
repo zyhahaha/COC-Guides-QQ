@@ -1,4 +1,7 @@
-/* pages/search/search.wxss */
+.t-grid-item {
+  margin-bottom: 20rpx;
+}
+
 page {
     /* background: #F5F5F5; */
 }

@@ -1,3 +1,7 @@
+.t-grid-item {
+  margin-bottom: 20rpx;
+}
+
 .detail {
     width: 100%;
     overflow: auto;
