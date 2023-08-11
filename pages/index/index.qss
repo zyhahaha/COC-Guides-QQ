@@ -2,6 +2,10 @@
   margin-bottom: 20rpx;
 }
 
+.t-tabs__content-inner.t-tabs__content-inner {
+  transform: none !important;
+}
+
 .container {
   width: 100%;
   overflow: auto;
