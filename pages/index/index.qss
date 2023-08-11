@@ -15,6 +15,9 @@
   /* color: #0052d9; */
   color: rgba(0, 0, 0, 0.9);
 }
+.t-grid-item {
+  margin-bottom: 20rpx;
+}
 
 .search-wrap {
   display: flex;
