@@ -6,7 +6,7 @@
     <view style="padding: 20rpx; color: #ed4014; font-size: 28rpx; text-align: center;" wx:if="{{levelUpperLimit}}">
         大本营{{ level }}级：{{ unitDetail.name }}最高可以升级到{{ levelUpperLimit }}级
     </view>
-    <view style="padding: 0rpx 30rpx; font-weight: bold; font-size: 28rpx; text-align: center;">
+    <view style="margin-bottom: 20rpx; padding: 0rpx 30rpx; font-weight: bold; font-size: 28rpx; text-align: center;">
         {{ unitDetail.detail.description }}
     </view>
     <view style="margin-bottom: 20rpx;">
