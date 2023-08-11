@@ -50,7 +50,11 @@ Page({
       url,
     })
   },
-  onPicker1Cancel() { },
+  onPicker1Cancel() {
+    this.setData({
+      pickerVisible: false
+    })
+  },
   onPickerChange() {},
   // onHandleActionSelected(e) {
   //   console.log('picker1 confirm:', e.detail);
