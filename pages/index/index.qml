@@ -33,9 +33,9 @@
     </view>
     <t-tabs sticky swipeable value="{{ tabValue }}" bind:change="onTabsChange">
         <t-tab-panel label="{{ item.name }}" value="{{ index }}" wx:for="{{ unitData }}" wx:key="index">
-            <t-grid column="{{4}}" theme="card">
+            <t-grid column="{{4}}" gutter="15">
                 <view style="height: 20rpx;"></view>
-                <t-grid-item wx:for="{{ item.children }}" wx:key="index" text="{{ item.name }}" bindtap="onDetail" data-content="{{item}}">
+                <t-grid-item wx:for="{{ item.children }}" wx:key="{{index}}" text="{{ item.name }}" bindtap="onDetail" data-content="{{item}}">
                     <image
                         class="image-icon"
                         src="{{ 'http://119.96.189.81:7788/images/' + item.name + '.png' }}"
