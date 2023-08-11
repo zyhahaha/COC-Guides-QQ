@@ -2,7 +2,7 @@
 <view class="container">
     <!-- 搜索 -->
     <view class="search-wrap">
-        <t-icon name="menu-fold" size="48rpx" style="margin-top: 10rpx;" bind:click="onOpenDrawer" />
+        <!-- <t-icon name="menu-fold" size="48rpx" style="margin-top: 10rpx;" bind:click="onOpenDrawer" /> -->
         <!-- <t-icon name="setting" size="48rpx" style="margin-top: 10rpx;" bind:click="onChangeLevel" /> -->
         <view bindtap="onChangeLevel" style="width: 86rpx; height: 70rpx; line-height: 66rpx; text-align: right;">
             {{ level }}本
