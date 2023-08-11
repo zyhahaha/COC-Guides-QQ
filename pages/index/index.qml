@@ -15,7 +15,7 @@
         </view> -->
         <t-picker
             visible="{{pickerVisible}}"
-            title="请选择"
+            title="请选择大本营等级"
             bindconfirm="onHandleActionSelected"
             bindcancel="onPicker1Cancel"
             bindchange="onPickerChange"
