@@ -52,26 +52,26 @@
                         src="{{ 'http://119.96.189.81:7788/images/' + item.name + '.png' }}"
                         slot="image"
                         mode="aspectFit"
-                        style="width: 80rpx; height: 80rpx;"
+                        style="width: 100rpx; height: 100rpx;"
                     />
                 </t-grid-item>
                 <t-grid-item key="aaa">
-                    <view style="width: 80rpx; height: 80rpx;"></view>
+                    <view style="width: 100rpx; height: 100rpx;"></view>
                 </t-grid-item>
                 <t-grid-item key="bbb">
-                    <view style="width: 80rpx; height: 80rpx;"></view>
+                    <view style="width: 100rpx; height: 100rpx;"></view>
                 </t-grid-item>
                 <t-grid-item key="ccc">
-                    <view style="width: 80rpx; height: 80rpx;"></view>
+                    <view style="width: 100rpx; height: 100rpx;"></view>
                 </t-grid-item>
                 <t-grid-item key="ddd">
-                    <view style="width: 80rpx; height: 80rpx;"></view>
+                    <view style="width: 100rpx; height: 100rpx;"></view>
                 </t-grid-item>
                 <t-grid-item key="eee">
-                    <view style="width: 80rpx; height: 80rpx;"></view>
+                    <view style="width: 100rpx; height: 100rpx;"></view>
                 </t-grid-item>
                 <t-grid-item key="fff">
-                    <view style="width: 80rpx; height: 80rpx;"></view>
+                    <view style="width: 100rpx; height: 100rpx;"></view>
                 </t-grid-item>
             </t-grid>
         </t-tab-panel>

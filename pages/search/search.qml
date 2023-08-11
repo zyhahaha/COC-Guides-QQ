@@ -11,7 +11,7 @@
     <t-grid column="{{4}}" theme="card" wx:if="{{ searchResultList.length > 0 }}">
         <!-- <t-grid-item wx:for="{{ searchResultList}}" wx:key="index" text="{{ item.name }}" image="{{ 'http://119.96.189.81:7788/images/' + item.name + '.png' }}" bindtap="onDetail" data-content="{{item}}" /> -->
         <t-grid-item wx:for="{{ searchResultList }}" wx:key="{{index}}" text="{{ item.name }}" bindtap="onDetail" data-content="{{item}}">
-            <image class="image-icon" src="{{ 'http://119.96.189.81:7788/images/' + item.name + '.png' }}" slot="image" mode="aspectFit" style="width: 80rpx; height: 80rpx;" />
+            <image class="image-icon" src="{{ 'http://119.96.189.81:7788/images/' + item.name + '.png' }}" slot="image" mode="aspectFit" style="width: 100rpx; height: 100rpx;" />
         </t-grid-item>
     </t-grid>
     <!-- 搜索结果 -->
