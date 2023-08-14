@@ -41,6 +41,14 @@ Page({
   onShow() {
     this.computePartyCountdownFn()
   },
+  /**
+   * 用户点击右上角分享
+   */
+   onShareAppMessage: function () {
+    qq.showShareMenu({
+      showShareItems: ['qq', 'qzone', 'wechatFriends', 'wechatMoment']
+    })
+  },
   onGoSearch(searchValue) {
     let url = `/pages/search/search`
     // if (!this.data.orderType) return;
